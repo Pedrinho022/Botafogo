@@ -1,3 +1,56 @@
+  body {
+    font-family: 'Poppins', sans-serif; 
+    color: black;
+    background-color: gray;
+  }
+  
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+}
+nav ul ul li {
+    float: none;
+}
+nav ul ul li a {
+    padding: 10px 20px;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+.sub-menu-h {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
 .logo-botafogo{
-    max-width: 50px;
+    max-width: 200px;
+    height: auto;
 }
