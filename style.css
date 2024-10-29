@@ -1,56 +1,80 @@
   body {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     font-family: 'Poppins', sans-serif; 
-    color: black;
     background-color: gray;
+    max-width: 100%;
   }
   
-nav {
-    background-color: black;
-    overflow: hidden;
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green; 
+    padding: 24px;
+}
+header{
+    background-color: aqua;
 }
 
+header .logo-botafogo{
+    background-color: brown; 
+    width: 150px;
+}
+header h1{
+    margin: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+header .cabecalho{
+    background-color: cornflowerblue;
+    display: flex;
+    width: 900px;
+    height: 100px;
+}
+ header .cabecalho .menu{
+    color: yellow;
+    margin: 12px;
+    transition: all 0.9;
+}
+
+header .cabecalho .menu:hover{
+    color: #787878
+}
+ 
+header .cabecalho .menu .sub-menu-h a{
+    background-color: aquamarine;
+    justify-content: center;
+    display: none;
+    text-decoration: underline;
+    padding: auto;
+}
 nav ul{
-    list-style-type: none;
+    background-color: chartreuse;
+    flex-wrap: nowrap;
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
-nav ul li {
-    float: left;
-    position: relative;
+
+nav ul .sub-menu-h{
+    background-color: darkgoldenrod;
+    list-style-type: wrap ;
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+
 }
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+
+nav ul .sub-menu-h .sub{
+    padding: 50px;
 }
-nav ul li a:hover {
-    background-color: #111;
-}
-nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-}
-nav ul ul li {
-    float: none;
-}
-nav ul ul li a {
-    padding: 10px 20px;
-}
-nav ul li:hover > ul {
-    display: block;
-}
-.sub-menu-h {
-    display: none;
-    position: absolute;
-    background-color: wheat;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-.logo-botafogo{
-    max-width: 200px;
-    height: auto;
-}
+
